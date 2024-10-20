@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Detail</title>
+</head>
+<body>
+    <div>
+        <a href="{% url 'blog' %}">Back</a>
+        <a href="{% url 'update' post.id %}">Update</a>
+        <a href="{% url 'delete' post.id %}">Delete</a>
+    </div>
+   <div>
+       <h1>{{ post.title }}</h1>
+       <img src="{{ post.img.url }}" alt="">
+   </div>
+
+</body>
+</html>
